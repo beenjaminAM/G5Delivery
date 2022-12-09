@@ -7,6 +7,7 @@ import Clases.Producto;
 import Clases.ProductoArreglo;
 import java.awt.event.ActionEvent;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.JRadioButton;
 
 /**
  *
@@ -29,10 +30,22 @@ public class ControladorMod {
         });
         
         vistaMod.agregar.addActionListener((ActionEvent ae) -> {
-            String tipo = vistaMod.tipoPlato.getText();
+          String tipo=" ";
+           if(vistaMod.Platillo.isSelected()==true)
+            {
+             tipo = vistaMod.Platillo.getText();
+            }
+
+           if(vistaMod.Condimento.isSelected()==true)
+            {
+             tipo = vistaMod.Condimento.getText();
+            }
+            
             String descripcion = vistaMod.descripcion.getText(); 
             int precio = Integer.parseInt(vistaMod.costoPlato.getText());
+
                  
+
             Producto producto = new Producto(descripcion,tipo, precio);
             modeloProductos.agregar(producto);
             limpiarControles();
