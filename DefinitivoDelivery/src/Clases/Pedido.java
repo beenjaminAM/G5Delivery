@@ -34,6 +34,16 @@ public class Pedido {
     public void setCliente(String cliente) {
         this.nombreCliente = cliente;
     }
+    
+    public float calcularTotal(){
+        int i;
+        int suma=0;
+        for (i=0;i<this.productos.getIndiceP();i++)
+                {
+                   suma= suma+this.productos.getProductos()[i].getCosto();
+                }
+        return suma;
+    }
 
     @Override
     public String toString() {

@@ -8,6 +8,7 @@ public class Producto{
     private String descripcion;
     private String tipo;
     private int costo;
+    private Valoracion valoracion;
 
     public Producto(String descripcion, String tipo, int costo) {
         this.descripcion = descripcion;
@@ -38,6 +39,9 @@ public class Producto{
     public void setCosto(int costo) {
         this.costo = costo;
     }
- 
+    public Valoracion getValoracion() {
+        return valoracion;
+    }
+
 
 }
