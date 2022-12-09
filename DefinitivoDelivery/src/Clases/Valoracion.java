@@ -21,5 +21,27 @@ public class Valoracion {
         }   
         
     }
+    
+    public void calcularValorPuntos(int valor){
+        switch(valor){
+            case 1:
+                this.valor[0]++;
+                break;
+            case 2:
+                this.valor[1]++;
+                break;
+            case 3:
+                this.valor[2]++;
+                break;
+            case 4:
+                this.valor[3]++;
+                break;
+            case 5:
+                this.valor[4]++;
+                break;
+            default:
+                break;          
+        }
+    }
             
 }
