@@ -26,11 +26,42 @@ public class ControladorValor {
             controladorInicio.iniciar();
             v.dispose();
         });
+        
+        
+        v.buttonValo.addActionListener((ActionEvent ae) -> {
+            int fila = this.v.tablevalor.getSelectedRow();
+            String name = (String) v.tablevalor.getValueAt(fila, 0);
+            Producto p = this.plat.buscar(name);
+            if(fila > -1){
+                
+                
+                if(v.valo1.isSelected()){
+                 p.valoracion.calcularValorPuntos(1);
+                }
+                if(v.valo2.isSelected()){
+                    p.valoracion.calcularValorPuntos(2);
+                }
+                if(v.valo3.isSelected()){
+                    p.valoracion.calcularValorPuntos(3);
+                }
+                if(v.valo4.isSelected()){
+                    p.valoracion.calcularValorPuntos(4);
+                }
+                if(v.valo5.isSelected()){
+                    p.valoracion.calcularValorPuntos(5);
+                }       
+            }
+            
+            LimpiarControlesValoracion();
+            
+        });        
+        
     }
  
     public void Iniciar()
     {
     v.setVisible(true);
+    LimpiarControlesValoracion();
     
     }
     

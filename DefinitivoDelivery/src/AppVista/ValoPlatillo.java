@@ -31,13 +31,13 @@ public class ValoPlatillo extends javax.swing.JFrame {
         Valobtngroup = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton5 = new javax.swing.JRadioButton();
+        valo5 = new javax.swing.JRadioButton();
+        valo3 = new javax.swing.JRadioButton();
+        valo2 = new javax.swing.JRadioButton();
+        valo4 = new javax.swing.JRadioButton();
+        valo1 = new javax.swing.JRadioButton();
         returnValor = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        buttonValo = new javax.swing.JButton();
         lblTitulo = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablevalor = new javax.swing.JTable();
@@ -48,30 +48,30 @@ public class ValoPlatillo extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Valobtngroup.add(jRadioButton1);
-        jRadioButton1.setText("5: Muy bueno");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+        Valobtngroup.add(valo5);
+        valo5.setText("5: Muy bueno");
+        valo5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
+                valo5ActionPerformed(evt);
             }
         });
 
-        Valobtngroup.add(jRadioButton3);
-        jRadioButton3.setText("3: Normal");
+        Valobtngroup.add(valo3);
+        valo3.setText("3: Normal");
 
-        Valobtngroup.add(jRadioButton4);
-        jRadioButton4.setText("2: Malo");
+        Valobtngroup.add(valo2);
+        valo2.setText("2: Malo");
 
-        Valobtngroup.add(jRadioButton2);
-        jRadioButton2.setText("4: Bueno");
-        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+        Valobtngroup.add(valo4);
+        valo4.setText("4: Bueno");
+        valo4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton2ActionPerformed(evt);
+                valo4ActionPerformed(evt);
             }
         });
 
-        Valobtngroup.add(jRadioButton5);
-        jRadioButton5.setText("1: Pésimo");
+        Valobtngroup.add(valo1);
+        valo1.setText("1: Pésimo");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -80,26 +80,26 @@ public class ValoPlatillo extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jRadioButton5)
-                    .addComponent(jRadioButton2)
-                    .addComponent(jRadioButton4)
-                    .addComponent(jRadioButton3))
+                    .addComponent(valo5)
+                    .addComponent(valo1)
+                    .addComponent(valo4)
+                    .addComponent(valo2)
+                    .addComponent(valo3))
                 .addContainerGap(24, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(17, 17, 17)
-                .addComponent(jRadioButton1)
+                .addComponent(valo5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButton2)
+                .addComponent(valo4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButton3)
+                .addComponent(valo3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jRadioButton4)
+                .addComponent(valo2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jRadioButton5)
+                .addComponent(valo1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -108,8 +108,8 @@ public class ValoPlatillo extends javax.swing.JFrame {
         returnValor.setText("Regresar");
         jPanel1.add(returnValor, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 430, -1, -1));
 
-        jButton2.setText("Valorar");
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 350, -1, -1));
+        buttonValo.setText("Valorar");
+        jPanel1.add(buttonValo, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 350, -1, -1));
 
         lblTitulo.setFont(new java.awt.Font("Tempus Sans ITC", 1, 36)); // NOI18N
         lblTitulo.setForeground(new java.awt.Color(255, 255, 255));
@@ -158,13 +158,13 @@ public class ValoPlatillo extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+    private void valo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_valo4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton2ActionPerformed
+    }//GEN-LAST:event_valo4ActionPerformed
 
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+    private void valo5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_valo5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
+    }//GEN-LAST:event_valo5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -203,18 +203,18 @@ public class ValoPlatillo extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup Valobtngroup;
-    private javax.swing.JButton jButton2;
+    public javax.swing.JButton buttonValo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblTitulo;
     public javax.swing.JButton returnValor;
     public javax.swing.JTable tablevalor;
+    public javax.swing.JRadioButton valo1;
+    public javax.swing.JRadioButton valo2;
+    public javax.swing.JRadioButton valo3;
+    public javax.swing.JRadioButton valo4;
+    public javax.swing.JRadioButton valo5;
     // End of variables declaration//GEN-END:variables
 }
