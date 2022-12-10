@@ -7,6 +7,7 @@ package Controladores;
 
 
 import AppVista.Inicio;
+import AppVista.ValoPlatillo;
 import Clases.PedidoArreglo;
 import Clases.ProductoArreglo;
 import java.awt.event.ActionEvent;
@@ -44,7 +45,11 @@ public class ControladorInicio {
             controladorCarta.iniciar();
             vistaInicio.dispose();            
         });
-
+            vistaInicio.botonValor.addActionListener((ActionEvent ae) -> {
+            ControladorValor controladorValor = new ControladorValor(new ValoPlatillo(), modeloProductos, modeloPedidos);
+            controladorValor.Iniciar();
+            vistaInicio.dispose();
+        });
         
         
     }

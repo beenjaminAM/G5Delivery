@@ -36,7 +36,7 @@ public class ValoPlatillo extends javax.swing.JFrame {
         jRadioButton4 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
         jRadioButton5 = new javax.swing.JRadioButton();
-        jButton1 = new javax.swing.JButton();
+        returnValor = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         lblTitulo = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -100,13 +100,13 @@ public class ValoPlatillo extends javax.swing.JFrame {
                 .addComponent(jRadioButton4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jRadioButton5)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 170, 140, 160));
 
-        jButton1.setText("Regresar");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 430, -1, -1));
+        returnValor.setText("Regresar");
+        jPanel1.add(returnValor, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 430, -1, -1));
 
         jButton2.setText("Valorar");
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 350, -1, -1));
@@ -203,7 +203,6 @@ public class ValoPlatillo extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup Valobtngroup;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
@@ -216,5 +215,6 @@ public class ValoPlatillo extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JLabel lblTitulo;
+    public javax.swing.JButton returnValor;
     // End of variables declaration//GEN-END:variables
 }
