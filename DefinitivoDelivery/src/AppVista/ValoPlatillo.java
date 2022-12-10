@@ -40,7 +40,7 @@ public class ValoPlatillo extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         lblTitulo = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tablevalor = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -116,7 +116,7 @@ public class ValoPlatillo extends javax.swing.JFrame {
         lblTitulo.setText("Valoración de platillo");
         jPanel1.add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 370, 50));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tablevalor.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -145,7 +145,7 @@ public class ValoPlatillo extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tablevalor);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 410, 270));
 
@@ -213,8 +213,8 @@ public class ValoPlatillo extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JRadioButton jRadioButton5;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
     private javax.swing.JLabel lblTitulo;
     public javax.swing.JButton returnValor;
+    public javax.swing.JTable tablevalor;
     // End of variables declaration//GEN-END:variables
 }

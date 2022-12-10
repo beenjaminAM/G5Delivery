@@ -4,7 +4,7 @@ package Clases;
 
 
 public class Valoracion {
-    private int[] valor;
+    public int[] valor;
     private double[] valorPorcentaje;
     
     public Valoracion(){
