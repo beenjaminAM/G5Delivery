@@ -8,7 +8,7 @@ public class Producto{
     private String descripcion;
     private String tipo;
     private int costo;
-    private Valoracion valoracion;
+    public Valoracion valoracion;
 
     public Producto(String descripcion, String tipo, int costo) {
         this.descripcion = descripcion;
